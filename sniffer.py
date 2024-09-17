@@ -1,5 +1,6 @@
 import socket
 
-# s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)
+s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)
 
-print("Hello World")
+while True:
+    print(s.recvfrom(65565)) 
